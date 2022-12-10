@@ -1,7 +1,7 @@
 from menu import Menu, MenuItem
 from coffee_maker import CoffeeMaker
 from money_machine import MoneyMachine
-import os
+import os, time
 
 os.system("clear")
 
@@ -26,3 +26,6 @@ while True:
             enough_money = money.make_payment(drink.cost)
             if enough_money:
                 coffee_machine.make_coffee(drink)
+                
+    time.sleep(3)
+    os.system("clear")
